@@ -1,0 +1,121 @@
+:root{
+    --nutmeg:hsl(14, 45%, 36%);
+    --dark-raspberry:hsl(332, 51%, 32%);
+    --rose-white:hsl(330, 100%, 98%);
+    --eggshell:hsl(30, 54%, 90%);
+    --light-grey:hsl(30, 18%, 87%);
+    --wenge-brown:hsl(30, 10%, 34%);
+    --dark-charcoal:hsl(24, 5%, 18%);
+    --young-serif:'Young Serif', sans-serif;
+    --outfit:'Outfit', sans-serif;
+}
+*{
+    padding:0;
+    margin:0;
+    font-size: 16px;
+}
+body{
+    background-color: var(--eggshell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page{
+    padding:2%;
+    max-width: 45%;
+    margin:5% 0; 
+    background-color: white;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+section{
+    margin-top:1rem;
+}
+.heading{
+    font-family: var(--young-serif);
+    font-size:2.5em;
+}
+th, .heading{
+    color: var(--dark-charcoal);
+    font-weight: 400;
+}
+p{
+    color: var(--dark-charcoal);
+    font-family: var(--outfit);
+    font-size: 1em;
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+.preparation{
+    padding:3%;
+    background-color: var(--rose-white);
+    margin-top: 2rem;
+}
+.preparation h1{
+    color: var(--dark-raspberry);
+    font-size: 1.25em;
+    font-family: var(--outfit);
+    margin-left: 10px;
+}
+ul, ol{
+     margin-left:1rem;
+     margin-top: 1rem; 
+}
+li{
+    padding:.5%;
+    font-family: var(--outfit);
+    color: var(--wenge-brown);
+    list-style-position: inside ;
+}
+.ingredients-list li, .instructions-list li{
+    list-style-position: outside;
+    line-height: 1.5rem;
+}
+.time li::marker{
+    color:var(--dark-raspberry);
+}
+.bold-text{
+    color: var(--dark-charcoal);
+    font-weight: 600;
+    opacity: 0.9;
+}
+.color-heading{
+    color: var(--nutmeg);
+    font-family: var(--young-serif);
+    font-weight: 400;
+    font-size:1.5em;
+}
+.ingredients-list li::marker, .instructions-list li::marker, td{
+    font-family: var(--outfit);
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+hr{
+    margin:5% 0;
+    color:var(--light-grey);
+    opacity: 0.5;
+}
+table tr:not(table tr:last-of-type){
+    border-bottom: 1px solid var(--light-grey);   
+}
+table tr{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+table{
+    margin-top: 1rem;;
+    width: 100%;
+} 
+th{
+    margin-left: 2%;
+    font-family: var(--outfit);
+}
+@media (max-width:600px){
+    .page{
+        max-width:100%;
+    }
+}
